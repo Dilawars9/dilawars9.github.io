@@ -15,5 +15,5 @@ layout: default
 9. A combination of a graphene quantum dots–cationic red dye donor–acceptor pair and cucurbit [7] uril as a supramolecular sensor for ultrasensitive detection of cancer biomarkers spermine and spermidine.
 10. Synthesis of Green Emitting Multi‐substituted Dibenzodioxins and Related Heteroacenes and Computational Investigation of Substituent Effects on Emission Spectra.
 
-[Google Scholar](https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ&view_op=list_works&sortby=pubdate)
-[Researchgate](https://www.researchgate.net/profile/Dilawar-Sisodiya)
+My Google Scholar - [Google Scholar](https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ&view_op=list_works&sortby=pubdate)
+My Researchgate - [Researchgate](https://www.researchgate.net/profile/Dilawar-Sisodiya)
