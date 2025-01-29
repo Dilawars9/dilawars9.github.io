@@ -2,10 +2,12 @@
 title: Home
 layout: default
 ---
+> “I... a universe of atoms, an atom in the universe.”  
+> — Richard P. Feynman
 
 # Welcome to My Research Portfolio
 My name is Dilawar, and I'm a 5th-year PhD student specializing in theoretical and computational chemistry.
-Part of my thesis work focused on modeling crown-ether synthesis reaction pathways to highlight the Template effect's importance.
+Part of my thesis focused on modeling crown-ether synthesis reaction pathways to highlight the importance of the Template effect.
 The other part focused on elucidating Azo-Crown-based molecules' Photo and Thermal isomerization pathways.
 
 
