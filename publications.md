@@ -18,3 +18,4 @@ layout: default
 
 My Google Scholar - [Google Scholar](https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ&view_op=list_works&sortby=pubdate)
 My Researchgate - [Researchgate](https://www.researchgate.net/profile/Dilawar-Sisodiya)
+My LinkedIn - [LinkedIn](https://www.linkedin.com/in/sisodiya-dilawar-singh-2989a0257/)
