@@ -14,6 +14,7 @@ layout: default
 8. Exploring the reaction pathway involved in the dibenzo‐18‐crown‐6 synthesis from catechol and bis (2‐chloroethyl) ether in presence of base.
 9. A combination of a graphene quantum dots–cationic red dye donor–acceptor pair and cucurbit [7] uril as a supramolecular sensor for ultrasensitive detection of cancer biomarkers spermine and spermidine.
 10. Synthesis of Green Emitting Multi‐substituted Dibenzodioxins and Related Heteroacenes and Computational Investigation of Substituent Effects on Emission Spectra.
+11. Theoretical Study of Spectroscopy and Photodynamics of Decatetraene as a Representative Dimethylated Polyene [Link](https://pubs.acs.org/doi/10.1021/acs.jpca.4c08185)
 
 My Google Scholar - [Google Scholar](https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ&view_op=list_works&sortby=pubdate)
 My Researchgate - [Researchgate](https://www.researchgate.net/profile/Dilawar-Sisodiya)
