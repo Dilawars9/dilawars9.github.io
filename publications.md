@@ -15,6 +15,7 @@ layout: default
 9. A combination of a graphene quantum dots–cationic red dye donor–acceptor pair and cucurbit [7] uril as a supramolecular sensor for ultrasensitive detection of cancer biomarkers spermine and spermidine. [Link](https://doi.org/10.1039/D2TB01269C)
 10. Synthesis of Green Emitting Multi‐substituted Dibenzodioxins and Related Heteroacenes and Computational Investigation of Substituent Effects on Emission Spectra. [Link](https://doi.org/10.1002/slct.202001999)
 11. Theoretical Study of Spectroscopy and Photodynamics of Decatetraene as a Representative Dimethylated Polyene. [Link](https://pubs.acs.org/doi/10.1021/acs.jpca.4c08185)
+12. Pyrrolo[1,2-a]quinoxaline: A Combined Experimental and Computational Study on the Photophysical Properties of a New Photofunctional Building Block. [Link](https://doi.org/10.1021/acs.jpcb.5c01810)
 
 My Google Scholar - [Google Scholar](https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ&view_op=list_works&sortby=pubdate)
 My Researchgate - [Researchgate](https://www.researchgate.net/profile/Dilawar-Sisodiya)
