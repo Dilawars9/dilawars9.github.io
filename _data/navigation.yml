@@ -7,3 +7,14 @@ main:
     url: /publications/
   - title: "CV"
     url: /cv/
+
+# ADD THIS NEW SECTION 👇
+footer:
+  - title: "GitHub"
+    url: "https://github.com/Dilawars9"
+  - title: "Google Scholar"
+    url: "https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ"
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/sisodiya-dilawar-singh-2989a0257/"
+  - title: "ResearchGate"
+    url: "https://www.researchgate.net/profile/Dilawar-Sisodiya"
