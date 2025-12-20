@@ -4,6 +4,7 @@ permalink: /
 header:
   overlay_color: "#333" 
   overlay_filter: 0.5
+  author_profile: true
   excerpt: "Ph.D. in Theoretical & Computational Chemistry <br /> BITS Pilani, Goa Campus"
   actions:
     - label: "Browse Research"
