@@ -1,22 +1,17 @@
+# --- SITE SETTINGS ---
 title: "Dilawar Singh Sisodiya"
-description: "PhD in Computational Chemistry | BITS Pilani"
+description: "PhD in Computational Chemistry"
 url: "https://dilawars9.github.io"
 baseurl: ""
 
-# Theme Settings
+# --- THEME ---
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "default"
 
-# Plugins
-plugins:
-  - jekyll-include-cache
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Author Details (Left Sidebar)
+# --- SIDEBAR & AUTHOR ---
 author:
   name: "Dilawar Singh Sisodiya"
-  bio: "PhD in Theoretical Chemistry. Investigating reaction mechanisms and photochemistry."
+  bio: "PhD in Theoretical Chemistry. Investigating reaction mechanisms."
   location: "Goa, India"
   links:
     - label: "GitHub"
@@ -25,10 +20,11 @@ author:
     - label: "Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/sisodiya-dilawar-singh-2989a0257/"
 
-# Navigation (Looks for _data/navigation.yml)
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+# --- PLUGINS ---
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
