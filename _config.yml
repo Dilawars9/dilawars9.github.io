@@ -64,3 +64,17 @@ search: true           # Enables the search magnifying glass
 search_full_content: true
 read_time: true        # Shows "2 min read" on posts
 words_per_minute: 200
+
+# -----------------------
+# NAVIGATION SETTINGS
+# -----------------------
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default" 
+      # This tells the theme to look for the sidebar settings
+
+# Explicitly link the navigation data
+navigation:
+  main:  # This matches the "main:" word inside your _data/navigation.yml
