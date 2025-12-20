@@ -1,0 +1,9 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Research"
+    url: /research.md/
+  - title: "Publications"
+    url: /publications.md/
+  - title: "CV"
+    url: /cv/
