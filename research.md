@@ -48,5 +48,5 @@ To support theoretical studies, I develop custom tools for workflow automation:
 * **GAMESS-US** 
 * **ORCA** 
 * **OpenMolcas** 
-* ]*xTB & MLatom** 
+* **xTB & MLatom** 
 * **Newton-X**
