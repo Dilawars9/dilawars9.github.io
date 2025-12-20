@@ -2,6 +2,7 @@
 title: Publications
 layout: default
 classes: wide
+permalink: /publications/
 ---
 
 # 📚 Publications
