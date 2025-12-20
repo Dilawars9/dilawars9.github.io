@@ -1,30 +1,20 @@
-# --- SITE SETTINGS ---
-title: "Dilawar Singh Sisodiya"
+title: "TESTING MODE"
 description: "PhD in Computational Chemistry"
 url: "https://dilawars9.github.io"
 baseurl: ""
 
-# --- THEME ---
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "default"
 
-# --- SIDEBAR & AUTHOR ---
 author:
   name: "Dilawar Singh Sisodiya"
-  bio: "PhD in Theoretical Chemistry. Investigating reaction mechanisms."
+  bio: "PhD in Theoretical Chemistry."
   location: "Goa, India"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Dilawars9"
-    - label: "Scholar"
-      icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/sisodiya-dilawar-singh-2989a0257/"
 
-# --- PLUGINS ---
 plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
