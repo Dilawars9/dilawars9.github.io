@@ -2,6 +2,7 @@
 title: Research
 layout: default
 permalink: /research/
+author_profile: true
 ---
 
 # Research Overview
