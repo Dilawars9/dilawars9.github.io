@@ -3,6 +3,7 @@ title: Publications
 layout: default
 classes: wide
 permalink: /publications/
+author_profile: true
 ---
 
 # 📚 Publications
