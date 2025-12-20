@@ -1,6 +1,19 @@
 title: "My Research Portfolio"
 description: "Exploring Computational Chemistry"
-remote_theme: mmistakes/minimal-mistakes
-author: "Dilawar"
+url: "https://dilawars9.github.io"
 baseurl: ""
-url: "https://dilawars9.github.io" 
+
+# Theme Settings
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "default" # Options: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Author Sidebar Settings
+author:
+  name: "Dilawar"
+  bio: "Ph.D. in Computational Chemistry"
+  location: "India"
+  # avatar: "/assets/images/profile.jpg" # Uncomment this line later if you upload a photo
+
+# Plugins
+plugins:
+  - jekyll-include-cache
