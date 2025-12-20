@@ -1,67 +1,34 @@
-# -----------------------
-# SITE SETTINGS
-# -----------------------
 title: "Dilawar Singh Sisodiya"
-# A strong tagline for SEO (Search Engine Optimization)
-description: "PhD in Theoretical & Computational Chemistry. Specializing in Photochemistry, Reaction Mechanisms, and Electronic Structure Theory."
+description: "PhD in Computational Chemistry | BITS Pilani"
 url: "https://dilawars9.github.io"
-baseurl: "" # Keep empty since you are using a main username.github.io domain
+baseurl: ""
 
-# -----------------------
-# THEME & VISUALS
-# -----------------------
+# Theme Settings
 remote_theme: mmistakes/minimal-mistakes
-# Skin Options: "default" (Blue), "air" (White/Grey), "contrast" (High Contrast), "sunrise" (Red/Orange)
 minimal_mistakes_skin: "default"
 
-# -----------------------
-# AUTHOR SIDEBAR
-# -----------------------
-# This populates the left sidebar on every page
+# Plugins
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Author Details (Left Sidebar)
 author:
-  name: "Dilawar Singh Sisodiya, PhD"
-  bio: "Computational Chemist investigating light-matter interactions and nonadiabatic dynamics."
+  name: "Dilawar Singh Sisodiya"
+  bio: "PhD in Theoretical Chemistry. Investigating reaction mechanisms and photochemistry."
   location: "Goa, India"
-  email: "dilawars941@gmail.com"
-  # You need to upload a photo to specific folder for this to work, or remove this line for now
-  # avatar: "/assets/images/profile.jpg"
-  
-  # Social Links (Icons will appear automatically)
   links:
-    - label: "Google Scholar"
-      icon: "fas fa-graduation-cap"
-      url: "https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ"
-    
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Dilawars9"
+    - label: "Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ"
 
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/sisodiya-dilawar-singh-2989a0257/"
-      
-    - label: "ResearchGate"
-      icon: "fab fa-fw fa-researchgate"
-      url: "https://www.researchgate.net/profile/Dilawar-Sisodiya"
-
-    - label: "ORCID"
-      icon: "fab fa-fw fa-orcid"
-      url: "https://orcid.org/0000-0002-6027-7410"
-
-# -----------------------
-# PLUGINS & SYSTEM
-# -----------------------
-plugins:
-  - jekyll-include-cache
-  - jekyll-sitemap   # Helps Google index your site
-  - jekyll-seo-tag   # Improves how links look when shared on social media
-
-# -----------------------
-# FEATURES
-# -----------------------
-locale: "en-US"
-search: true           # Enables the search magnifying glass
-search_full_content: true
-read_time: true        # Shows "2 min read" on posts
-words_per_minute: 200
-
+# Navigation (Looks for _data/navigation.yml)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
