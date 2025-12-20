@@ -28,8 +28,16 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
 
+# -----------------------
+# GLOBAL DEFAULTS (THE FIX)
+# -----------------------
 defaults:
   - scope:
       path: ""
+      type: pages  # Applies to all pages (Research, Publications, etc.)
     values:
       layout: "default"
+      author_profile: true      # Forces the Sidebar Bio on all pages
+      footer: true              # Forces the Footer on all pages
+      sidebar:
+        nav: "docs"             # Ensures navigation works
