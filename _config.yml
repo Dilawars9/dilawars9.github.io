@@ -1,6 +1,6 @@
 title: "My Research Portfolio"
 description: "Exploring Computational Chemistry"
-theme: minima
+remote_theme: mmistakes/minimal-mistakes
 author: "Dilawar"
 baseurl: ""
 url: "https://dilawars9.github.io" 
