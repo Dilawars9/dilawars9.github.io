@@ -15,13 +15,13 @@ header:
       btn_class: "btn--info"
 ---
 
-# 👋 Welcome
+#  Welcome
 
 I am a **Computational Chemist** specializing in reaction mechanisms, photochemistry, and electronic structure theory. 
 
 My work combines **Quantum Dynamics**, **DFT**, and **Nonadiabatic Dynamics** to understand how molecules behave in excited states.
 
-## 🚀 Key Highlights
+##  Key Highlights
 
 * **Mechanism Discovery:** Uncovering formation pathways of crown ethers using DFT.
 * **Photochemistry:** Modeling *cis-trans* isomerization in Azo-crown ethers.
