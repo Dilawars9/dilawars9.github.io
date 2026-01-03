@@ -19,7 +19,7 @@ header:
 
 I am a **Computational Chemist** specializing in reaction mechanisms, photochemistry, and electronic structure theory. 
 
-My work combines **Quantum Dynamics**, **DFT**, and **Nonadiabatic Dynamics** to understand how molecules behave in excited states.
+My work combines **Electronic Structure Theory** and **Molecular Dynamics** to understand how molecules behave in excited states.
 
 ##  Key Highlights
 
