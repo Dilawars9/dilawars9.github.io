@@ -1,43 +1,61 @@
 title: "Dilawar Singh Sisodiya"
-description: "PhD in Computational Chemistry"
+description: "Computational chemist working on reaction mechanisms, photochemistry, excited-state processes, and scientific workflow development."
 url: "https://dilawars9.github.io"
 baseurl: ""
 
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "default"
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "air"
 
-# -----------------------
-# FOOTER SETTINGS (NEW)
-# -----------------------
+locale: "en-US"
+timezone: "Asia/Kolkata"
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+author:
+  name   : "Dilawar Singh Sisodiya"
+  avatar : "https://avatars.githubusercontent.com/u/108183354?v=4"
+  bio    : "Computational Chemist | Reaction Mechanisms | Photochemistry | Excited-State Dynamics"
+  location: "India"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://dilawars9.github.io"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Dilawars9"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org/0000-0002-6027-7410"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/sisodiya-dilawar-singh-2989a0257/"
+
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Dilawars9"
-    - label: "Scholar"
+    - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org/0000-0002-6027-7410"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/sisodiya-dilawar-singh-2989a0257/"
 
-# -----------------------
-# SYSTEM SETTINGS
-# -----------------------
-plugins:
-  - jekyll-include-cache
-  - jekyll-seo-tag
-
-# -----------------------
-# GLOBAL DEFAULTS (THE FIX)
-# -----------------------
 defaults:
   - scope:
       path: ""
-      type: pages  # Applies to all pages (Research, Publications, etc.)
+      type: "pages"
     values:
-      layout: "default"
-      author_profile: true      # Forces the Sidebar Bio on all pages
-      footer: true              # Forces the Footer on all pages
+      layout: "single"
+      author_profile: true
       sidebar:
-        nav: "docs"             # Ensures navigation works
+        nav: "docs"
