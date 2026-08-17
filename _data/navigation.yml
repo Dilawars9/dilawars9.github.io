@@ -5,6 +5,8 @@ main:
     url: /research/
   - title: "Publications"
     url: /publications/
+  - title: "Software"
+    url: /research/#computational-tools
   - title: "CV"
     url: /cv/
 
