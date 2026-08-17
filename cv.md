@@ -2,80 +2,93 @@
 title: "Curriculum Vitae"
 permalink: /cv/
 layout: single
-author_profile: true
+classes: wide
+author_profile: false
 ---
 
-# Curriculum Vitae
+<div class="cv-header">
+  <div>
+    <p class="eyebrow">ACADEMIC PROFILE</p>
+    <h1>Curriculum Vitae</h1>
+    <p class="lede">Computational chemist working on molecular reaction dynamics, photochemistry, and electronic structure methods.</p>
+  </div>
+  <a class="btn btn--primary" href="/assets/files/CV-Dilawar-Singh-Sisodiya.pdf">Download PDF CV</a>
+</div>
+
+## Research interests
+
+- Light–matter interaction and its role in driving molecular dynamics
+- Excited-state processes and nonadiabatic dynamics in photoactive systems
+- Comparative analysis and development of quantum chemistry methods
+- Computational exploration of reaction mechanisms
+- Electronic structure methods and scientific workflow automation
 
 ## Education
 
-### Ph.D. in Theoretical / Computational Chemistry (2020–2025)
+### PhD in Theoretical / Computational Chemistry · 2020–2025
 **BITS Pilani, K K Birla Goa Campus**  
-Thesis: *A Computational Investigation on the Mechanisms of Template Synthesis and Trans-Cis Isomerization Reactions of Some Selected Crown Ethers.*
+Advisor: **Prof. Anjan Chattopadhyay**<br>
+Thesis: *A Computational Investigation on the Mechanisms of Template Synthesis and Trans–Cis Isomerization Reaction of Some Selected Crown Ethers* — submitted
 
-### M.Sc. in Inorganic Chemistry (2017–2019)
+### MSc in Inorganic Chemistry · 2017–2019
 **The Maharaja Sayajirao University of Baroda**
 
-### B.Sc. in Chemistry (2014–2017)
+### BSc in Chemistry · 2014–2017
 **The Maharaja Sayajirao University of Baroda**
 
----
+## Research profile
 
-## Research Interests
+My doctoral research investigates template-assisted crown ether synthesis and the photochemical and thermal isomerization pathways of photoresponsive azo crown ethers. I use DFT, TDDFT, SF-TDDFT, and MRSF-TDDFT to study ground- and excited-state potential energy surfaces, including critical features such as conical intersections.
 
-- Reaction mechanisms in supramolecular and macrocyclic systems
-- Photochemistry and photoisomerization
-- Excited-state electronic structure
-- Potential energy surface analysis
-- Computational spectroscopy
-- Scientific workflow automation for quantum chemistry
+I also develop Python and Bash tools for structure interpolation, automation, and pre-/post-processing of quantum chemical data, and use xTB and MLatom for molecular dynamics simulations of reactive intermediates and isomerization events.
 
----
+## Experience
 
-## Awards and Achievements
-
-- **Best Teaching Assistant Award**, BITS Pilani Goa
-- **GATE Qualified** (2019)
-- **GSET Qualified** (2018)
-- **Minaxi Lalit Award** (received three times)
-- **Travel Grant Award**, Theoretical Chemistry Symposium 2023, IIT Madras
-
----
-
-## Teaching Experience
-
-### Teaching Assistant (2020–2024)
-**BITS Pilani Goa**
+### Teaching Assistant · 2020–2024
+**BITS Pilani, K K Birla Goa Campus**
 
 - Conducted undergraduate chemistry laboratory practicals
 - Mentored students in computational chemistry methods
-- Assisted with instruction, evaluation, and laboratory support
+- Supported instruction, evaluation, and laboratory operations
+- Received the **Best Teaching Assistant Award**
 
----
+### Senior Chemist
+**Rubamin Pvt. Ltd.**
 
-## Conferences and Presentations
+Worked on the extraction of rare-earth elements from spent petroleum catalysts.
 
-- **Flash Talk:** “The Molecular Dance of Butterfly Crown Molecules” — BITS Pilani, February 2025
-- **Poster Presentation:** Theoretical Chemistry Symposium (TCS 2023), IIT Madras
-- **Poster Presentation:** NSRP 2023, BITS Pilani
-- **Poster Presentation:** NCMMS 2022, VIT Bhopal
-- **Workshop:** *Introduction to Gaussian: Theory and Practice* — Hyderabad, 2020
+### MSc dissertation
+**Under Prof. R. N. Jadeja**<br>
+DFT-based exploration of molecular properties of small molecules using Gaussian 09.
 
----
+## Technical skills
 
-## Technical Skills
+<div class="skill-grid">
+  <div><strong>Electronic structure</strong><span>Gaussian 16 · GAMESS-US · ORCA · OpenMolcas</span></div>
+  <div><strong>Dynamics and modeling</strong><span>xTB · MLatom · Newton-X · PES analysis</span></div>
+  <div><strong>Programming</strong><span>Python · Bash · scientific data extraction</span></div>
+  <div><strong>Methods</strong><span>DFT · TDDFT · SF-TDDFT · MRSF-TDDFT · SOC</span></div>
+</div>
 
-### Computational Chemistry
-- Gaussian
-- ORCA
-- GAMESS-US
-- Electronic structure calculations
-- Excited-state analysis
-- Reaction pathway exploration
+## Awards and achievements
 
-### Programming and Workflow
-- Python
-- Bash
-- Scientific scripting
-- Data extraction and automation
-- Coordinate and structure processing
+- GATE qualified (2019)
+- GSET qualified (2018)
+- Minaxi Lalit Award, received three times
+- Travel Grant Award, Theoretical Chemistry Symposium 2023, IIT Madras
+- Best Teaching Assistant Award during PhD
+- Volunteered in the organization of academic events, including Open Science Day
+
+## Conferences and workshops
+
+- Flash Talk: “The Molecular Dance of Butterfly Crown Molecules” — BITS Pilani, February 2025
+- Virtual Winter School on Computational Chemistry — University of Edinburgh, January 2025
+- CECAM55 Conference — online, September 2024
+- Theoretical Chemistry Symposium — IIT Madras, 2023
+- NSRP — BITS Pilani Goa Campus, 2023
+- NCMMS — VIT Bhopal, 2022
+- Introduction to Gaussian: Theory and Practice — Hyderabad, 2020
+
+## Contact
+
+For research, collaboration, or scientific software enquiries, email [dilawars941@gmail.com](mailto:dilawars941@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/sisodiya-dilawar-singh-2989a0257/).

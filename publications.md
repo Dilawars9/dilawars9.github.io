@@ -8,8 +8,10 @@ author_profile: true
 
 # Publications
 
-You can also find my work on [Google Scholar](https://scholar.google.com/citations?hl=en&user=Oki-eAQAAAAJ){: .btn .btn--info}
-[ResearchGate](https://www.researchgate.net/){: .btn .btn--success}
+My publication record spans reaction mechanisms, excited-state dynamics, photophysics, and supramolecular chemistry.
+
+[Google Scholar](https://scholar.google.com/citations?user=Oki-eAQAAAAJ&hl=en){: .btn .btn--info}
+[ResearchGate](https://www.researchgate.net/profile/Dilawar-Sisodiya){: .btn .btn--success}
 [LinkedIn](https://www.linkedin.com/in/sisodiya-dilawar-singh-2989a0257/){: .btn .btn--primary}
 
 ---
@@ -25,6 +27,10 @@ You can also find my work on [Google Scholar](https://scholar.google.com/citatio
 **Chattopadhyay, A.; Menger, M. F. S. J.; Sisodiya, D. S.; Köppel, H.**  
 *Journal of Physical Chemistry A*, **129** (10), 2442-2453 (2025)  
 [Article](https://pubs.acs.org/doi/10.1021/acs.jpca.4c08185){: .btn .btn--primary .btn--small}
+
+### A Computational Study on the Thermal and Photo Isomerizations of Azobis(Benzo-15-Crown-5) Involved in the Potassium Ion Transport Across Organic Liquid Membrane
+**Sisodiya, D. S.; Mishra, A.; Chattopadhyay, A.**<br>
+*To be communicated* (2025)
 
 ---
 
@@ -86,3 +92,7 @@ You can also find my work on [Google Scholar](https://scholar.google.com/citatio
 **Ashok Phadte, A.; Chattopadhyay, A.; Banerjee, S.; Singh Sisodiya, D.; Raghava, T.**  
 *ChemistrySelect*, **5** (33), 10177-10186 (2020)  
 [DOI](https://doi.org/10.1002/slct.202001999){: .btn .btn--primary .btn--small}
+
+### Photochemical Oxaziridine Conversion and Subsequent Lactam Formation Pathways of 3,5,5-Trimethyl-1-Pyrroline 1-Oxide
+**Sen, S.; Sisodiya, D. S.; Chattopadhyay, A.**<br>
+*ISRAPS Bulletin* (2023)

@@ -16,7 +16,8 @@ plugins:
 author:
   name   : "Dilawar Singh Sisodiya"
   avatar : "https://avatars.githubusercontent.com/u/108183354?v=4"
-  bio    : "Computational Chemist | Reaction Mechanisms | Photochemistry | Excited-State Dynamics"
+  bio    : "Computational chemist studying molecular reaction dynamics, photochemistry, and excited-state processes."
+  email  : "dilawars941@gmail.com"
   location: "India"
   links:
     - label: "Website"
