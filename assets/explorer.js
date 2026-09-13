@@ -5,13 +5,13 @@
  const ctx=canvas.getContext('2d');
  if(!ctx) { $('stage-copy').textContent='This browser cannot draw the surfaces. Read the scientific overview below.'; return; }
  let mode='fluorescence', topology='peaked', progress=0, playing=false, last=0, yaw=-.65, pitch=.55, zoom=1, flat=false, approach=0;
- let stageIndex=-1, width=600, height=430, frames=[], stages=[], fitScale=40, offsetX=300, offsetY=300;
+ let stageIndex=-1, width=600, height=430, frames=[], stages=[], fitScale=40, offsetX=300, offsetY=300, animationId=null;
  const colors=['#83c7ff','#efc96c','#d3a3fa'];
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
  const isCI=()=>mode==='reaction'||mode==='intersection';
  function energy(s,x,y) {
   if(isCI()) {const tilt=mode==='intersection'&&topology==='sloped'?1.4:0, delta=mode==='intersection'&&topology==='avoided'?.35:0; return 2+.3*(x*x+y*y)+tilt*x+(s===0?-1:1)*Math.sqrt(x*x+y*y+delta*delta);}
-  return s===0?.35*(x+1)**2+.25*y*y:s===1?3+.35*(x-.8)**2+.30*y*y:2+.30*(x+1)**2+.30*y*y;
+  return s===0?.35*(x+1)**2+.25*y*y:s===1?3+.35*(x-.8)**2+.30*y*y:2.8+.30*x*x+.30*y*y;
  }
  const point=(x,y,s)=>[x,y,energy(s,x,y),s];
  function setup() {
@@ -25,9 +25,9 @@
    frames=[point(-1,0,0),point(-1,0,1),point(.8,0,1),point(.8,0,1),point(.8,0,0),point(-1,0,0)];
    stages=[ground,absorption,relaxation,['Excited-state residence','Competing radiative and nonradiative processes determine the population lifetime. This marker is not a probability distribution.','s1','Waiting time is illustrative','Example τ = 5 ns; playback duration is independent of τ.'],fluor,relaxGS];
   } else if(mode==='triplet') {
-   const crossing=(1.16-Math.sqrt(1.16**2-4*.05*.924))/.1;
-   frames=[point(-1,0,0),point(-1,0,1),point(crossing,0,1),point(crossing,0,2),point(-1,0,2),point(-1,0,2),point(-1,0,0)];
-   stages=[ground,absorption,relaxation,['Intersystem crossing · S₁ → T₁','Population changes spin multiplicity near a singlet/triplet crossing. These spin-diabatic surfaces omit explicit spin–orbit coupling; passage here is selected, not guaranteed.','t1','No photon · spin character changes',generic],['Triplet relaxation','The marker moves toward the T₁ minimum after intersystem crossing. Nuclear coordinates change while triplet character is retained.','t1','Relaxation on T₁',generic],['Triplet residence','A triplet population may survive longer than a singlet population. Quenching and other competing decay channels can shorten its lifetime.','t1','Waiting time is illustrative','Example triplet population lifetime: τ = 1 ms. Strongly system- and environment-dependent.'],['Phosphorescence · T₁ → S₀','Radiative decay connects triplet and singlet states. It is spin-forbidden in a pure-spin description; spin–orbit mixing can allow emission.','s0','↓ Photon emitted · phosphorescence','Illustrative τ = 1 ms. Animation is time-compressed and not rate-based.']];
+   const crossing=(.56-Math.sqrt(.56**2-4*.05*.424))/.1;
+   frames=[point(-1,0,0),point(-1,0,1),point(crossing,0,1),point(crossing,0,2),point(0,0,2),point(0,0,2),point(0,0,0),point(-1,0,0)];
+   stages=[ground,absorption,relaxation,['Intersystem crossing · S₁ → T₁','Population changes spin multiplicity near a singlet/triplet crossing. These spin-diabatic surfaces omit explicit spin–orbit coupling; passage here is selected, not guaranteed.','t1','No photon · spin character changes',generic],['Triplet relaxation','The marker moves toward the T₁ minimum after intersystem crossing. Nuclear coordinates change while triplet character is retained.','t1','Relaxation on T₁',generic],['Triplet residence','A triplet population may survive longer than a singlet population. Quenching and other competing decay channels can shorten its lifetime.','t1','Waiting time is illustrative','Example triplet population lifetime: τ = 1 ms. Strongly system- and environment-dependent.'],['Phosphorescence · T₁ → S₀','Emission is vertical from the relaxed T₁ geometry, distinct from the absorption geometry in this model. Radiative decay connects triplet and singlet states. It is spin-forbidden in a pure-spin description; spin–orbit mixing can allow emission.','s0','↓ Photon emitted · phosphorescence','Illustrative τ = 1 ms. Animation is time-compressed and not rate-based.'],relaxGS];
   } else {
    const angle=mode==='intersection'?approach*Math.PI/180:0;
    const x=-1.5*Math.cos(angle),y=-1.5*Math.sin(angle);
@@ -119,10 +119,16 @@
   }
  }
  function resize(){const rect=canvas.getBoundingClientRect(),dpr=Math.min(2,devicePixelRatio||1);width=rect.width;height=rect.height;canvas.width=width*dpr;canvas.height=height*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);draw();}
- function pause(){playing=false;$('play').textContent='Play pathway';}
+ function pause(){playing=false;cancelAnimationFrame(animationId);animationId=null;$('play').textContent='Play pathway';}
  function seek(t){pause();progress=Math.max(0,Math.min(1,t));update();}
- function tick(now){if(!playing)return;const dt=Math.min(80,now-last);last=now;progress=Math.min(1,progress+dt/20000*Number($('speed').value));update();if(progress===1)pause();else requestAnimationFrame(tick);}
- $('play').addEventListener('click',()=>{if(playing){pause();return;}if(progress>=1)progress=0;playing=true;last=performance.now();$('play').textContent='Pause';requestAnimationFrame(tick);});
+ function tick(now){animationId=null;if(!playing)return;const dt=Math.max(0,Math.min(250,now-last));last=now;progress=Math.min(1,progress+dt/20000*Number($('speed').value));update();if(progress===1)pause();else animationId=requestAnimationFrame(tick);}
+ $('play').addEventListener('click',()=>{
+  if(playing){pause();return;}
+  if(progress>=1)progress=0;
+  // The initial configuration remains available to inspect, but Play starts motion immediately.
+  if(progress<1/stages.length)progress=1/stages.length;
+  playing=true;last=performance.now();$('play').textContent='Pause';update();animationId=requestAnimationFrame(tick);
+ });
  $('timeline').addEventListener('input',()=>seek(Number($('timeline').value)/1000));$('replay').addEventListener('click',()=>seek(0));
  $('previous').addEventListener('click',()=>seek((Math.max(0,stageIndex-1)+.5)/stages.length));$('next').addEventListener('click',()=>seek((Math.min(stages.length-1,stageIndex+1)+.5)/stages.length));
  document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{pause();mode=b.dataset.mode;progress=0;document.querySelectorAll('[data-mode]').forEach(a=>a.setAttribute('aria-pressed',String(a===b)));setup();}));
